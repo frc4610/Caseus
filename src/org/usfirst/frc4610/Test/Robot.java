@@ -11,6 +11,7 @@
 
 package org.usfirst.frc4610.Test;
 
+import edu.wpi.first.wpilibj.CameraServer;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
@@ -23,6 +24,8 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.usfirst.frc4610.Test.RobotMap;
 import org.usfirst.frc4610.Test.commands.*;
 import org.usfirst.frc4610.Test.subsystems.*;
+
+
 
 
 /**
@@ -62,6 +65,8 @@ public class Robot extends IterativeRobot {
         retrieveBelt = new Retrievebelt();
         scissorer = new Scissorer();
         liftsystem = new LiftSystem();
+       CameraServer.getInstance().startAutomaticCapture();   
+      
         //lift = new Lift();
        // servoCONTROL = new ServoCONTROL();
        

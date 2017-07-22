@@ -54,7 +54,9 @@ public class RobotMap {
      public static void init() {
          
        
-    	 //CameraServer.getInstance().startAutomaticCapture();
+    	 CameraServer camera = new CameraServer();
+    	 camera.setQuality(50);
+    	 camera.startAutomaticCapture("cam2");
 
     	
     	
