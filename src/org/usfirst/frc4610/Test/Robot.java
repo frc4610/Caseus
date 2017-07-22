@@ -18,6 +18,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.wpilibj.CameraServer;
 //import org.usfirst.frc4610.Test.subsystems.Lift;
 //import org.usfirst.frc4610.Test.subsystems.ServoCONTROL;
 import org.usfirst.frc4610.Test.RobotMap;
@@ -64,6 +65,7 @@ public class Robot extends IterativeRobot {
         liftsystem = new LiftSystem();
         //lift = new Lift();
        // servoCONTROL = new ServoCONTROL();
+        CameraServer.getInstance().startAutomaticCapture();
        
         
         
