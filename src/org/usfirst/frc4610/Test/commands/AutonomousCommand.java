@@ -45,29 +45,31 @@ public class AutonomousCommand extends Command {
     protected void execute() {
     	
 
-   		RobotMap.driveTrainleftBack.set(0.8);
-   		RobotMap.driveTrainrightBack.set(-0.8);
+   		RobotMap.driveTrainleftBack.set(0.265);
+   		RobotMap.driveTrainrightBack.set(-0.265);
+   		RobotMap.driveTrainleftFront.set(0.265);
+   		RobotMap.driveTrainrightFront.set(-0.265);
    		Timer.delay(3);
-   		RobotMap.driveTrainleftBack.set(-0.8);
-   		RobotMap.driveTrainrightBack.set(-0.8);
-   		Timer.delay(1.3);
-   		RobotMap.driveTrainleftBack.set(0.8);
-   		RobotMap.driveTrainrightBack.set(-0.8);
-   		Timer.delay(3);
-   		RobotMap.driveTrainleftBack.set(0.8);
-   		RobotMap.driveTrainrightBack.set(0.8);
-   		Timer.delay(1.3);
-   		RobotMap.driveTrainleftBack.set(-0.8);
-   		RobotMap.driveTrainrightBack.set(0.8);
-   		Timer.delay(3);
-   		RobotMap.driveTrainleftBack.set(0.8);
-   		RobotMap.driveTrainrightBack.set(0.8);
-   		Timer.delay(.8);
-   		RobotMap.driveTrainleftBack.set(-0.8);
-   		RobotMap.driveTrainrightBack.set(0.8);
-   		Timer.delay(1.2);
-   		RobotMap.liftmotor.set(1.0);
-   		Timer.delay(2);
+   	//	RobotMap.driveTrainleftBack.set(-0.8);
+   	//	RobotMap.driveTrainrightBack.set(-0.8);
+   //		Timer.delay(1.3);
+   	//	RobotMap.driveTrainleftBack.set(0.8);
+   // 	RobotMap.driveTrainrightBack.set(-0.8);
+   //		Timer.delay(3);
+   //		RobotMap.driveTrainleftBack.set(0.8);
+   //		RobotMap.driveTrainrightBack.set(0.8);
+   	//	Timer.delay(1.3);
+   	//	RobotMap.driveTrainleftBack.set(-0.8);
+   //		RobotMap.driveTrainrightBack.set(0.8);
+   	//	Timer.delay(3);
+   	//	RobotMap.driveTrainleftBack.set(0.8);
+   	//	RobotMap.driveTrainrightBack.set(0.8);
+   	//	Timer.delay(.8);
+   	//	RobotMap.driveTrainleftBack.set(-0.8);
+   	//	RobotMap.driveTrainrightBack.set(0.8);
+   	//	Timer.delay(1.2);
+   		//RobotMap.liftmotor.set(1.0);
+   		//Timer.delay(2);
    		
    		
     		
@@ -78,7 +80,7 @@ public class AutonomousCommand extends Command {
 
 	// Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-    	if((Timer.getFPGATimestamp()-beginmatch)>15)
+    	if((Timer.getFPGATimestamp()-beginmatch)>1)
     		return true;
 
         return false;
